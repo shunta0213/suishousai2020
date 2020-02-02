@@ -10,38 +10,108 @@
 
 }
 
-#header{
+#top{
   width: 100%;
   height: 100%;
 }
 
 
+/* 固定されたヘッダー */
 #fixedheader{
+  position: fixed;
   display: flex;
   justify-content: space-between;
-}
-
-.name{
+  align-items: center;
+  top:2px;
+  right:0;
+  left:5px;
+  height:5vh;
   font-size: calc(62.5% + 0.8vw);
 }
 
-
-#btn-menu{
-
+/*menu btn */
+.menu{
+    height: 20px;
+    position: absolute;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    z-index: 99;
+}
+.menu__line{
+    background: #000;
+    display: block;
+    height: 2px;
+    position: absolute;
+    transition:transform .3s;
+    width: 100%;
+}
+.menu__line--center{
+    top: 9px;
+}
+.menu__line--bottom{
+    bottom: 0;
+}
+.menu__line--top.active{
+    top: 8px;
+    transform: rotate(45deg);
+}
+.menu__line--center.active{
+    transform:scaleX(0);
+}
+.menu__line--bottom.active{
+    bottom: 10px;
+    transform: rotate(135deg);
 }
 
-#top{
+/*gnav*/
+.gnav{
+    background: rgba(0,0,0,0.9);
+    display: none;
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    z-index: 98;
+    top:0;
+}
+.gnav__wrap{
+    align-items:center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+}
+.gnav__menu{
+  list-style: none;
+}
+.gnav__menu__item{
+    margin: 30px 0;
+}
+.gnav__menu__item a{
+    color: #fff;
+    font-size: 2em;
+    font-weight: bold;
+    padding: 40px;
+    text-decoration: none;
+    transition: .5s;
+}
+.gnav__menu__item a:hover{
+    color: #666;
+}
+
+/* TOP */
+
+#theme{
   font-size: calc(150% + 10vw);
   margin-top: 25vh;
   margin-bottom: 25vh;
-  margin-bottom: ;
   text-align: center;
 }
 
-div#theme{
-  text-align: center;
-  font-size: calc(62.5% + 10vw);
-}
+
+/*カウントダウン*/
 
 div.timecountdown{
   text-align: center;
@@ -58,13 +128,14 @@ div.timecountdown{
 }
 
 .tag{
-  font-size: calc(62.5%);
+  font-size: 62.5%;
 }
 
 div#result{
   font-size: calc(62.5% + 0.8vw);
 }
 
+/* あいさつ */
 
 .greet-main{
   text-align: center;
@@ -78,5 +149,20 @@ div#result{
   border-top: solid 6px black;
   box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);/*影*/
   /* over */
+
+}
+
+@media screen and (max-width: 500px){
+  div#top{
+    font-size: 100%;
+  }
+
+  #fixedheader{
+    top:2px;
+    right:0;
+    left:5px;
+    height:8vh;
+    font-size: calc(100% + 0.5vw);
+  }
 
 }
