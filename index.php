@@ -3,20 +3,12 @@
 <head>
   <meta charset="utf-8">
   <title>[公式]翠翔祭2020</title>
-<<<<<<< HEAD
-<<<<<<< HEAD
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"> <!-- for SmartPhone Mediaqueries  -->
-=======
->>>>>>> c460b2301939fe41dcb16683567acc70381cc13e
-=======
->>>>>>> c460b2301939fe41dcb16683567acc70381cc13e
   <link rel="stylesheet" type="text/css" href="assets/main.css">
   <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
 </head>
 <body>
   <!-- 最初の画面 -->
-<<<<<<< HEAD
-<<<<<<< HEAD
   <div id="top">
     <header id="header">
       <div id="fixedheader">
@@ -42,22 +34,6 @@
         翠翔祭
       </div>
     </div>
-=======
-=======
->>>>>>> c460b2301939fe41dcb16683567acc70381cc13e
-  <header id="header">
-    <div id="fixedheader">
-      <div class="name">横浜翠嵐</div>
-      <img href="assets/images.png" id="btn-menu">
-    </div>
-    <div id="top">
-      <div　id="theme">翠翔祭</div>
-    </div>
-  </header>
-<<<<<<< HEAD
->>>>>>> c460b2301939fe41dcb16683567acc70381cc13e
-=======
->>>>>>> c460b2301939fe41dcb16683567acc70381cc13e
   <!-- MAIN -->
   <main>
     <div class="timecountdown">
@@ -70,13 +46,7 @@
   </main>
   <script type="text/javascript" src="assets/js/menu.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<<<<<<< HEAD
-<<<<<<< HEAD
   <script type="text/javascript" src="assets/js/menu.js"></script>
-=======
->>>>>>> c460b2301939fe41dcb16683567acc70381cc13e
-=======
->>>>>>> c460b2301939fe41dcb16683567acc70381cc13e
   <script type="text/javascript" src="assets/js/timecountdown.js"></script>
 </body>
 </html>
