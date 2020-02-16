@@ -4,7 +4,8 @@
   <meta charset="utf-8">
   <title>[公式]翠翔祭2020</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"> <!-- for SmartPhone Mediaqueries  -->
-  <link rel="stylesheet" type="text/css" href="assets/main.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/top.css">
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
 </head>
 <body>
