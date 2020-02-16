@@ -4,15 +4,16 @@
 }
 
 *{
-  font-size: calc(80% + 0.5vw);
+  font-size: calc(62.5% + 0.5vw);
   margin: 0px;
   padding: 0px;
-
+  font-family: "Noto Sans JP";
+  clear:both;
 }
 
 #top{
-  width: 100%;
-  height: 100%;
+  width: 98vw;
+  height: 100vh;
 }
 
 
@@ -27,7 +28,7 @@
   left:5px;
   height:5vh;
   font-size: calc(62.5% + 0.8vw);
-}
+  }
 
 /*menu btn */
 .menu{
@@ -38,6 +39,7 @@
     top: 20px;
     width: 30px;
     z-index: 99;
+    cursor: pointer;
 }
 .menu__line{
     background: #000;
@@ -56,13 +58,18 @@
 .menu__line--top.active{
     top: 8px;
     transform: rotate(45deg);
+    background: #fff;
 }
 .menu__line--center.active{
     transform:scaleX(0);
+    background: #fff;
+
 }
 .menu__line--bottom.active{
     bottom: 10px;
     transform: rotate(135deg);
+    background: #fff;
+
 }
 
 /*gnav*/
@@ -91,7 +98,7 @@
 }
 .gnav__menu__item a{
     color: #fff;
-    font-size: 2em;
+    font-size: 100%;
     font-weight: bold;
     padding: 40px;
     text-decoration: none;
@@ -103,10 +110,23 @@
 
 /* TOP */
 
+#top_intro{
+  display: flex;
+  align-items: center;
+}
+
+#intro{
+  padding-right: 5vw;
+  padding-top: 40vh;
+  padding-bottom: 20vh;
+
+}
+
 #theme{
-  font-size: calc(150% + 10vw);
-  margin-top: 25vh;
-  margin-bottom: 25vh;
+  padding-left: 5vw;
+  padding-top: 40vh;
+  padding-bottom: 20vh;
+  font-size: calc(300% + 2.5vw);
   text-align: center;
 }
 
@@ -114,17 +134,18 @@
 /*カウントダウン*/
 
 div.timecountdown{
-  text-align: center;
-  /* box */
-  padding: 0.5em 1em;
-  margin: 2em 0;
-  background: whitesmoke;/*背景色*/
-  border-top: solid 6px black;
-  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);/*影*/
-  /* over */
-  width: 80vw;
   margin-left: auto;
   margin-right: auto;
+  float: right;
+  /* box */
+  padding: 0.5em 1em;
+  /*
+  background: whitesmoke;
+  border-top: solid 6px black;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+  */
+  /* over */
+
 }
 
 .tag{
@@ -133,26 +154,90 @@ div.timecountdown{
 
 div#result{
   font-size: calc(62.5% + 0.8vw);
+  margin-right: 5vw
 }
 
 /* あいさつ */
-
 .greet-main{
-  text-align: center;
-  width: 80vw;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 2em;
   /* box */
-  padding: 0.5em 1em;
-  background: whitesmoke;/*背景色*/
+  padding: 10px 10px;
+  /*
+  background: whitesmoke;
   border-top: solid 6px black;
-  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);/*影*/
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+  */
   /* over */
-
 }
 
+h1.greet-main{
+  font-size: 30px;
+}
+
+h3.greet-main{
+  padding-left: 20px;
+}
+
+/* タイムテーブル */
+#timeTable{
+  margin-left: auto;
+  margin-right: auto;
+  width: 80vw;
+  text-align: center;
+  clear: both;
+  /* box */
+  padding: 0.5em 1em;
+  /*
+  background: whitesmoke;
+  border-top: solid 6px black;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+  */
+  /* over */
+}
+
+/* TAB切替部分 */
+.tab_item{
+  display: none;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.is-active-item{
+  display: block;
+  display: flex;
+}
+
+a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.tab_btn{
+  display: inline-block;
+  opacity: 0.3;
+}
+
+.is-active-btn{
+  opacity: 1;
+}
+
+/* TABLE内部 */
+caption{
+  margin-bottom: 20px;
+}
+
+.col2of4{
+  width: 50%;
+}
+
+.tablebox{
+  margin: 0 10px;
+}
+
+/* For SmartPhone */
 @media screen and (max-width: 500px){
+
   div#top{
     font-size: 100%;
   }
@@ -162,7 +247,16 @@ div#result{
     right:0;
     left:5px;
     height:8vh;
-    font-size: calc(100% + 0.5vw);
+    font-size: calc(100% + 2vw);
+  }
+
+  .gnav__menu__item a{
+    font-size: calc(130% + 4vw);
+    padding: 20px;
+  }
+
+  h1.greet-main{
+    font-size: 20px;
   }
 
 }
