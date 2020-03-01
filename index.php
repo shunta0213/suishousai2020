@@ -1,13 +1,16 @@
 <!DOCTYPE>
 <html>
+
 <head>
   <meta charset="utf-8">
   <title>[公式]翠翔祭2020</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"> <!-- for SmartPhone Mediaqueries  -->
   <link rel="stylesheet" type="text/css" href="assets/css/main.css">
   <link rel="stylesheet" type="text/css" href="assets/css/top.css">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
 </head>
+
 <body>
   <!-- 最初の画面 -->
   <div id="top">
@@ -17,35 +20,38 @@
       </div>
       <!-- menu -->
       <a class="menu">
-          <span class="menu__line menu__line--top"></span>
-          <span class="menu__line menu__line--center"></span>
-          <span class="menu__line menu__line--bottom"></span>
+        <span class="menu__line menu__line--top"></span>
+        <span class="menu__line menu__line--center"></span>
+        <span class="menu__line menu__line--bottom"></span>
       </a>
       <nav class="gnav">
-          <div class="gnav__wrap">
-              <ul class="gnav__menu">
-                  <li class="gnav__menu__item"><a href="">TOP</a></li>
-                  <li class="gnav__menu__item"><a href="">企画</a></li>
-                  <li class="gnav__menu__item"><a href="">パフォーマンス</a></li>
-              </ul>
-          <!--gnav-wrap--></div>
+        <div class="gnav__wrap">
+          <ul class="gnav__menu">
+            <li class="gnav__menu__item"><a href="">TOP</a></li>
+            <li class="gnav__menu__item"><a href="">企画</a></li>
+            <li class="gnav__menu__item"><a href="">パフォーマンス</a></li>
+          </ul> 
+          <!--gnav-wrap-->
+        </div>
       </nav>
     </header>
     <div id="top_intro">
-      <div id="theme" class="scrollreveal">
+      <div id="name" class="scrollreveal">
         翠翔祭
       </div>
       <div id="intro" class="scrollreveal">
         The Culture Festival <br> By YOKOHAMA SUIRAN
       </div>
+      <div id="theme" class="scrollreveal">Unlimited</div>
     </div>
     <div class="timecountdown">
       翠翔祭まで<div id="result"></div>
     </div>
-  <!--/#top--></div>
+    <!--/#top-->
+  </div>
 
   <!-- MAIN -->
-    <main>
+  <main>
     <div class="greet-main scrollreveal">
       <h1 class="greet-main">ごあいさつ</h1>
       <h3 class="greet-main">翠翔祭ホームページへようこそ！<br>
@@ -85,8 +91,10 @@
                 </tr>
               </tbody>
             </table>  -->
-          <!-- /.tablebox --></div>
-        <!-- /.col2of4 --></div>
+            <!-- /.tablebox -->
+          </div>
+          <!-- /.col2of4 -->
+        </div>
         <div class="col2of4">
           <div class="tablebox">
             <!-- 内容待ち
@@ -101,20 +109,30 @@
               </tbody>
             </table>
           -->
-          <!-- /.tablebox --></div>
-        <!-- /.col2of4 --></div>
+            <!-- /.tablebox -->
+          </div>
+          <!-- /.col2of4 -->
+        </div>
 
-      <!--/#item1--></div>
+        <!--/#item1-->
+      </div>
       <div class="tab_item" id="item2">
         いい
       </div>
-    <!--/#timetabele--></div>
+      <!--/#timetabele-->
+    </div>
 
   </main>
+  <footer id="footer">
+    <div　class="name">
+      神奈川県立横浜翠嵐高等学校
+    </div>
+  </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://unpkg.com/scrollreveal"></script>
   <script type="text/javascript" src="assets/js/menu.js"></script>
   <script type="text/javascript" src="assets/js/timecountdown.js"></script>
   <script type="text/javascript" src="assets/js/timetable.js"></script>
 </body>
+
 </html>
