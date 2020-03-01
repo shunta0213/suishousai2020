@@ -1,167 +1,203 @@
-@font-face {
-  font-family: 'logotype';
-  src: url('assets/fonts/ロゴたいぷゴシック.otf');
+@charset "utf-8";
+* {
+    font-size: calc(62.5% + 0.5vw);
+    margin: 0px;
+    padding: 0px;
+    font-family: "Noto Sans JP";
+    clear: both;
 }
-
-*{
-  font-size: calc(62.5% + 0.5vw);
-  margin: 0px;
-  padding: 0px;
-  font-family: "Noto Sans JP";
-  clear:both;
-}
-
 
 
 /* TOP */
 
-#top_intro{
-  display: flex;
-  align-items: center;
+#top_intro {
+    display: flex;
+    align-items: center;
 }
 
-#intro{
-  padding-right: 5vw;
-  padding-top: 40vh;
-  padding-bottom: 20vh;
-
+#intro {
+    padding-right: 5vw;
+    padding-top: 40vh;
+    padding-bottom: 20vh;
 }
 
-#theme{
-  padding-left: 5vw;
-  padding-top: 40vh;
-  padding-bottom: 20vh;
-  font-size: calc(300% + 2.5vw);
-  text-align: center;
+#name {
+    padding-left: 5vw;
+    padding-top: 40vh;
+    padding-bottom: 20vh;
+    font-size: calc(300% + 2.5vw);
+    text-align: center;
+}
+
+#theme {
+    font-family: 'Playfair Display';
+    letter-spacing: 2px;
+    font-size: calc(250% + 2.5vw);
+    padding-top: 40vh;
+    padding-bottom: 20vh;
+    margin: 0 5vw 0 auto;
 }
 
 
 /*カウントダウン*/
 
-div.timecountdown{
-  margin-left: auto;
-  margin-right: auto;
-  float: right;
-  /* box */
-  padding: 0.5em 1em;
-  /*
-  background: whitesmoke;
-  border-top: solid 6px black;
-  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
-  */
-  /* over */
-
+div.timecountdown {
+    font-size: 20px;
+    float: right;
+    /* box */
+    padding: 0.5em 1em;
+    /*
+    background: whitesmoke;
+    border-top: solid 6px black;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+    */
+    /* over */
 }
 
-.tag{
-  font-size: 62.5%;
+.tag {
+    font-size: 18px;
 }
 
-div#result{
-  font-size: calc(62.5% + 0.8vw);
-  margin-right: 5vw
+div#result {
+    font-size: calc(62.5% + 0.8vw);
+    margin-right: 5vw
 }
+
 
 /* あいさつ */
-.greet-main{
-  /* box */
-  padding: 10px 10px;
-  /*
+
+.greet-main {
+    /* box */
+    padding: 10px 10px;
+    /*
   background: whitesmoke;
   border-top: solid 6px black;
   box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
   */
-  /* over */
+    /* over */
 }
 
-h1.greet-main{
-  font-size: 30px;
+h1.greet-main {
+    font-size: 30px;
 }
 
-h3.greet-main{
-  padding-left: 20px;
+h3.greet-main {
+    padding-left: 20px;
 }
+
 
 /* タイムテーブル */
-#timeTable{
-  margin-left: auto;
-  margin-right: auto;
-  width: 80vw;
-  text-align: center;
-  clear: both;
-  /* box */
-  padding: 0.5em 1em;
-  /*
-  background: whitesmoke;
-  border-top: solid 6px black;
-  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
-  */
-  /* over */
+
+#timeTable {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80vw;
+    text-align: center;
+    clear: both;
+    /* box */
+    padding: 0.5em 1em;
+    /*
+    background: whitesmoke;
+    border-top: solid 6px black;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+    */
+    /* over */
 }
+
 
 /* TAB切替部分 */
-.tab_item{
-  display: none;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
+
+.tab_item {
+    display: none;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.is-active-item{
-  display: block;
-  display: flex;
+.is-active-item {
+    display: block;
+    display: flex;
 }
 
 a {
-  display: block;
-  color: inherit;
-  text-decoration: none;
+    display: block;
+    color: inherit;
+    text-decoration: none;
 }
 
-.tab_btn{
-  display: inline-block;
-  opacity: 0.3;
+.tab_btn {
+    display: inline-block;
+    opacity: 0.3;
 }
 
-.is-active-btn{
-  opacity: 1;
+.is-active-btn {
+    opacity: 1;
 }
+
 
 /* TABLE内部 */
-caption{
-  margin-bottom: 20px;
+
+caption {
+    margin-bottom: 20px;
 }
 
-.col2of4{
-  width: 50%;
+.col2of4 {
+    width: 50%;
 }
 
-.tablebox{
-  margin: 0 10px;
+.tablebox {
+    margin: 0 10px;
 }
+
 
 /* For SmartPhone */
-@media screen and (max-width: 500px){
 
-  div#top{
-    font-size: 100%;
-  }
-
-  #fixedheader{
-    top:2px;
-    right:0;
-    left:5px;
-    height:8vh;
-    font-size: calc(100% + 2vw);
-  }
-
-  .gnav__menu__item a{
-    font-size: calc(130% + 4vw);
-    padding: 20px;
-  }
-
-  h1.greet-main{
-    font-size: 20px;
-  }
-
+@media only screen and (max-width: 700px) {
+    div#top {
+        font-size: 100%;
+    }
+    /* TOP */
+    #top_intro {
+        /* 縦積みにする */
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    #name {
+        padding: 20vh 0 0 0;
+        font-size: 50px;
+        text-align: center;
+        letter-spacing: 5px;
+    }
+    #intro {
+        font-size: 12px;
+        letter-spacing: 1px;
+        padding: 0 0 0 0;
+        text-align: center;
+    }
+    #theme {
+        margin: 20vh 0 0 0;
+        padding: 0 0 0 0;
+        font-size: 60px;
+    }
+    /* count down  */
+    div.timecountdown {
+        margin-top: 5vh;
+        font-size: 16px;
+        padding: 0;
+    }
+    .d,
+    .h,
+    .m,
+    .s {
+        font-size: 16px;
+    }
+    .tag {
+        font-size: 14px;
+    }
+    /* なにか */
+    h1.greet-main {
+        font-size: 20px;
+    }
 }
